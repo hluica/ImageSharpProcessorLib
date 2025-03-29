@@ -1,0 +1,12 @@
+C:\Users\hanluica\New\ImageSharpProcessorLib\bin\Release\net9.0\ImageSharpProcessorLib.deps.json
+C:\Users\hanluica\New\ImageSharpProcessorLib\bin\Release\net9.0\ImageSharpProcessorLib.dll
+C:\Users\hanluica\New\ImageSharpProcessorLib\bin\Release\net9.0\ImageSharpProcessorLib.pdb
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.csproj.AssemblyReference.cache
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.AssemblyInfoInputs.cache
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.AssemblyInfo.cs
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.csproj.CoreCompileInputs.cache
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.dll
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\refint\ImageSharpProcessorLib.dll
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ImageSharpProcessorLib.pdb
+C:\Users\hanluica\New\ImageSharpProcessorLib\obj\Release\net9.0\ref\ImageSharpProcessorLib.dll
