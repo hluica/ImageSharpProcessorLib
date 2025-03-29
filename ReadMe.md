@@ -1,4 +1,4 @@
-﻿# ImageSharpProcessorLib feat. SixLabos.ImageSharp
+﻿# ImageSharpProcessorLib feat. SixLabors.ImageSharp
 
 使用SixLabors.ImageSharp处理图像的.NET类库。专门用于修改ppi和转换格式。
 
