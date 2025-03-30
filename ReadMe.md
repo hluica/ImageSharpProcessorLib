@@ -4,7 +4,7 @@
 A .NET library for image processing using SixLabors.ImageSharp, specifically designed for PPI modification and format conversion.
 
 这个类库是为了替代在我的PowerShell脚本中使用的IamegMagick而编写的。该脚本专用于大量图片的批处理，由于图片大小经过手动确定调整，故该脚本主要关注于分辨率与格式。
-This library was created to replace ImageMagick in my PowerShell scripts. These scripts are used for batch processing large quantities of images, focusing primarily on resolution and format conversion since image dimensions are manually verified and adjusted.
+This library was created to replace ImageMagick in my PowerShell scripts. These scripts are used for batch processing large quantities of images, focusing primarily on resolution and format conversion since image sizes are manually verified and adjusted.
 
 同时，由于脚本经过长期使用的积累，考虑到了部分特殊情况，其设置更贴合作者实际使用中的需求。
 Based on long-term usage experience, this library addresses various edge cases and is tailored to meet practical requirements.
@@ -24,7 +24,7 @@ Based on long-term usage experience, this library addresses various edge cases a
 ## 其他说明 | Additional Notes
 
 - 该类库由Gemini-2.5-Pro-Experimental-0325（temperature=0.3）编写初版，GitHub Copilot feat. Claude 3.5 Sonnet检查与修正。感谢LLM🙏。Gemini 2.5可在[Google AI Studio](http://aistudio.google.com/app/prompts/new_chat?model=gemini-2.5-pro-exp-03-25)体验
-- This library was initially drafted by Gemini-2.5-Pro-Experimental-0325 (temperature=0.3) and refined by GitHub Copilot featuring Claude 3.5 Sonnet. Thanks LLM🙏. Try Gemini 2.5 in [Google AI Studio](http://aistudio.google.com/app/prompts/new_chat?model=gemini-2.5-pro-exp-03-25)
+- This library was initially drafted by Gemini-2.5-Pro-Experimental-0325 (temperature=0.3) and refined by GitHub Copilot feat. Claude 3.5 Sonnet. Thanks LLM🙏. Try Gemini 2.5 in [Google AI Studio](http://aistudio.google.com/app/prompts/new_chat?model=gemini-2.5-pro-exp-03-25)
 
 - 本来计划使用Windows本机功能完全替代Imagemagick，然而System.Drawing.Common不稳定，改用SixLabors.ImageSharp后提高了处理速度，并降低了磁盘占用（Imagemagick：50M，ImageSharp dll：2M）。
 - Originally intended to use Windows native functionality, System.Drawing.Common reliability issues led to adopting SixLabors.ImageSharp instead, improving processing speed and reducing disk footprint (ImageMagick: 50MB vs ImageSharp dll: 2MB).
@@ -35,14 +35,13 @@ Based on long-term usage experience, this library addresses various edge cases a
 
 ## PowerShell上使用方法 | PowerShell Usage
 
-- 此类库使用`ImageSharpProcessorLib`命名空间，提供`ImageProcessor`类，公开静态方法:
-- In the lib there is `namespace ImageSharpProcessorLib { public class ImageProcessor { ... } }`. Provide the method:
+- 此类库使用`ImageSharpProcessorLib`命名空间，提供`ImageProcessor`类，公开静态方法: | The Library provides the method:
 
 ```csharp
 public static void ProcessImage(
-    string imagePath,           // 图片路径
-    bool convertToPng = false,  // 是否转换为PNG格式
-    bool linear = true,         // Use linear PPI (based on image width). Override other PPI settings
+    string imagePath,
+    bool convertToPng = false,
+    bool linear = true,         // Override other PPI settings
     bool no_ppi = false,        // Preserve original PPI, if lnear = false
     int ppi = 144               // Specified PPI value, if linear = false && no_ppi = false
 )
